@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 - Play 2048 Online by Leo Gopal.</title>
+    
+    <link rel="stylesheet" href="assets/css/2048.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBZG5PBGGW"></script>
+    
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KBZG5PBGGW");
+    </script>
+    
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">2048</h1>
+        <div class="score-container">0</div>
+      </div>
+      <p class="game-intro">
+        Join the numbers and get to the <strong>2048 tile!</strong>
+      </p>
+
+      <div class="game-container">
+        <div class="game-message">
+          <p></p>
+          <div class="lower">
+            <a class="retry-button">Try again</a>
+          </div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container"></div>
+      </div>
+
+      <p class="game-explanation">
+        <strong class="important">How to play:</strong> Use your
+        <strong>arrow keys</strong> to move the tiles. When two tiles with the
+        same number touch, they <strong>merge into one!</strong><br/><br/>
+        🧑🏻‍💻 A <a href="https://leogopal.comm/" target="_blank"> Leo Gopal Passion Project</a> | <a href="https://github.com/leogopal/2048-game/" target="_blank">2048 Github Project</a>
+       </p>
+    </div>
+    
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/hammer.min.js"></script>
+    <script src="assets/js/mousetrap.min.js"></script>
+    <script src="assets/js/2048.js"></script>
+  </body>
+</html>
